@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">0,0,4</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="minzoom">3</Parameter>
+  <Parameter name="maxzoom">8</Parameter>
+</Parameters>
+
+
+<Style name="places-label" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 1) and ([WORLDCITY] = 1)</Filter>
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Style name="places-marker" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 1) and ([WORLDCITY] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+  </Rule>
+</Style>
+<Style name="places" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 7)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([SCALERANK] &lt;= 7)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 0) and ([MEGACITY] = 0) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 0) and ([MEGACITY] = 0)</Filter>
+    <MarkersSymbolizer width="3" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="22" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 7) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 7)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([SCALERANK] &lt;= 7)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 0) and ([MEGACITY] = 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 0) and ([MEGACITY] = 1)</Filter>
+    <MarkersSymbolizer width="4" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="24" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([WORLDCITY] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([WORLDCITY] = 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([WORLDCITY] = 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([WORLDCITY] = 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([WORLDCITY] = 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([WORLDCITY] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([WORLDCITY] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 1) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#796551" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 1) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" fill="#4b3f32" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([WORLDCITY] = 1)</Filter>
+    <MarkersSymbolizer width="5" fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer size="26" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 0) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([ADM0CAP] = 0)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#796551" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([ADM0CAP] = 1) and ([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99) and ([ADM0CAP] = 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer fill="#4b3f32" face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 1)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 3)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 5)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 7)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([SCALERANK] &lt;= 99)</Filter>
+    <MarkersSymbolizer fill="#705d4b" stroke="#e6e6e6" stroke-width="0" allow-overlap="false" />
+    <TextSymbolizer face-name="Parker's Hand Regular" halo-fill="#e6e6e6" allow-overlap="false" halo-radius="0" wrap-width="0" dx="7" spacing="2" placement="point" placement-type="simple" placements="NE,E,SE,NW,W,SW,N,S" ><![CDATA[[NAME]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="places"
+  srs="+proj=longlat +ellps=WGS84 +no_defs">
+    <StyleName>places</StyleName>
+    <StyleName>places-marker</StyleName>
+    <StyleName>places-label</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/Kotaimen/Documents/MapBox/project/Test2/layers/places/ne_10m_populated_places.shp]]></Parameter>
+       <Parameter name="id"><![CDATA[places]]></Parameter>
+       <Parameter name="project"><![CDATA[Test2]]></Parameter>
+       <Parameter name="srs"><![CDATA[]]></Parameter>
+       <Parameter name="encoding"><![CDATA[windows1252]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

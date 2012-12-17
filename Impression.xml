@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-image="paper1.png" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">0,0,3</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="minzoom">3</Parameter>
+  <Parameter name="maxzoom">8</Parameter>
+  <Parameter name="name"><![CDATA[sketchy]]></Parameter>
+</Parameters>
+
+
+<Style name="10mbathymetry" filter-mode="first" >
+  <Rule>
+    <PolygonSymbolizer fill-opacity="0.177" fill="#d1d1d1" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="10mbathymetry"
+  status="off"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>10mbathymetry</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ray/Documents/MapBox/project/sketchy/layers/10mbathymetry/c22966e3-10m-bathymetry.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="10mocean" filter-mode="first" >
+</Style>
+<Style name="10mocean-texture" filter-mode="first"  comp-op="hard-light" >
+  <Rule>
+    <PolygonPatternSymbolizer file="sandpaper.png" />
+  </Rule>
+</Style>
+<Style name="10mocean-fill" filter-mode="first" >
+  <Rule>
+    <PolygonSymbolizer fill-opacity="1" fill="#d1d1d1" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="10mocean"
+  status="off"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>10mocean-fill</StyleName>
+    <StyleName>10mocean-texture</StyleName>
+    <StyleName>10mocean</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ray/Documents/MapBox/project/sketchy/layers/10mocean/fd7da679-10m-ocean.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="ne10mlakes" filter-mode="first" >
+</Style>
+<Style name="ne10mlakes-texture" filter-mode="first"  comp-op="hard-light" >
+  <Rule>
+    <PolygonPatternSymbolizer file="sandpaper.png" />
+  </Rule>
+</Style>
+<Style name="ne10mlakes-fill" filter-mode="first" >
+  <Rule>
+    <PolygonSymbolizer fill-opacity="1" fill="#d1d1d1" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="ne10mlakes"
+  status="off"
+  srs="+proj=longlat +ellps=WGS84 +no_defs">
+    <StyleName>ne10mlakes-fill</StyleName>
+    <StyleName>ne10mlakes-texture</StyleName>
+    <StyleName>ne10mlakes</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ray/Documents/MapBox/project/sketchy/layers/ne10mlakes/ne_10m_lakes.shp]]></Parameter>
+       <Parameter name="id"><![CDATA[ne10mlakes]]></Parameter>
+       <Parameter name="project"><![CDATA[sketchy]]></Parameter>
+       <Parameter name="srs"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="10mcoastline" filter-mode="first" >
+</Style>
+<Style name="10mcoastline-sketch2" filter-mode="first" >
+  <Rule>
+    <LineSymbolizer stroke-width="0.5" stroke-opacity="0.9" stroke="#f9f5eb" smooth="100" comp-op="multiply" />
+  </Rule>
+</Style>
+<Style name="10mcoastline-sketch1" filter-mode="first" >
+  <Rule>
+    <LineSymbolizer stroke-width="0.3" stroke-opacity="0.5" stroke="#f9f5eb" smooth="60" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="10mcoastline"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>10mcoastline-sketch1</StyleName>
+    <StyleName>10mcoastline-sketch2</StyleName>
+    <StyleName>10mcoastline</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ray/Documents/MapBox/project/sketchy/layers/10mcoastline/7fbdd772-10m-coastline.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="coastline" filter-mode="first" >
+</Style>
+<Style name="coastline-sketch2" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scale] = 1.2) and ([simplify] &lt;= 0.1) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scale] = 1.2) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scale] = 1.2) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.2) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.25) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([simplify] &lt;= 1) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([simplify] &lt;= 1) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([simplify] &lt;= 1) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([simplify] &lt;= 1) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([simplify] &lt;= 1) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([scale] = 1.2) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([simplify] &lt;= 1) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.5) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.5) and ([scale] = 1.2)</Filter>
+    <LineSymbolizer stroke-width="2" stroke-opacity="0.5" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+</Style>
+<Style name="coastline-sketch1" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.25)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.1) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.1) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.1) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.1) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.1) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scale] = 1.5) and ([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.25) and ([scale] = 1.5) and ([simplify] &gt;= 0.05)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scale] = 1.5) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scale] = 1.5) and ([simplify] &lt;= 0.1)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.25) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000000</MaxScaleDenominator>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([simplify] &lt;= 1) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([simplify] &lt;= 1) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.5) and ([simplify] &lt;= 1) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([simplify] &lt;= 1) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.25) and ([simplify] &lt;= 1) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([scale] = 1.5) and ([simplify] &lt;= 0.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([simplify] &lt;= 1) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.5) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.05) and ([simplify] &lt;= 0.5) and ([scale] = 1.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.6" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="coastline"
+  status="off"
+  srs="+proj=longlat +ellps=WGS84 +no_defs">
+    <StyleName>coastline-sketch1</StyleName>
+    <StyleName>coastline-sketch2</StyleName>
+    <StyleName>coastline</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ray/Documents/MapBox/project/sketchy/layers/coastline/coastline.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="roadshighscale-sketch1" filter-mode="first" >
+</Style>
+<Style name="roadshighscale" filter-mode="first" >
+</Style>
+<Style name="roadshighscale-sketch1/sketch2" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.01) and ([scalerank] &lt;= 6) and ([scale] = 2) and ([simplify] &lt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.01) and ([scalerank] &lt;= 6) and ([scale] = 2) and ([simplify] &lt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.01) and ([scalerank] &lt;= 6) and ([scale] = 2) and ([simplify] &lt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scale] = 2) and ([simplify] &gt;= 0.1) and ([scalerank] &lt;= 5)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scale] = 2) and ([simplify] &gt;= 0.1) and ([scalerank] &lt;= 5)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scale] = 2) and ([simplify] &gt;= 0.1) and ([scalerank] &lt;= 5)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.01) and ([simplify] &lt;= 0.5) and ([scalerank] &lt;= 6) and ([scale] = 2)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.01) and ([simplify] &lt;= 0.5) and ([scalerank] &lt;= 6) and ([scale] = 2)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.005) and ([scale] = 2) and ([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.005) and ([scale] = 2) and ([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.005) and ([scale] = 2) and ([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.005) and ([scale] = 2) and ([simplify] &gt;= 0.005) and ([scalerank] &lt;= 7)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.005) and ([scale] = 2) and ([simplify] &gt;= 0.005) and ([scalerank] &lt;= 7)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.001) and ([simplify] &lt;= 0.005) and ([scalerank] &lt;= 9) and ([scale] = 2)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.01) and ([scale] = 2) and ([scalerank] &lt;= 6)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.01) and ([scale] = 2) and ([scalerank] &lt;= 6)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.01) and ([scalerank] &lt;= 7) and ([scale] = 2)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.5) and ([scalerank] &lt;= 6) and ([scale] = 2)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 1) and ([scale] = 2) and ([simplify] &gt;= 1) and ([scalerank] &lt;= 3)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 1) and ([scale] = 2) and ([simplify] &gt;= 1) and ([scalerank] &lt;= 3)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([simplify] &lt;= 1) and ([scalerank] &lt;= 5) and ([scale] = 2)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-opacity="0.2" stroke="#bfb6a4" comp-op="multiply" />
+  </Rule>
+</Style>
+<Style name="roadshighscale-sketch1/sketch1" filter-mode="first" >
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.005)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.005)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.005)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.01) and ([simplify] &gt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.01) and ([simplify] &gt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.01) and ([simplify] &gt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &lt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scale] = 2.5) and ([simplify] &gt;= 0.1) and ([scalerank] &lt;= 5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scale] = 2.5) and ([simplify] &gt;= 0.1) and ([scalerank] &lt;= 5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scale] = 2.5) and ([simplify] &gt;= 0.1) and ([scalerank] &lt;= 5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &gt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.5) and ([scalerank] &lt;= 6) and ([scale] = 2.5) and ([simplify] &gt;= 0.01)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.5) and ([scalerank] &lt;= 6) and ([scale] = 2.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.005) and ([scale] = 2.5) and ([simplify] &gt;= 0.005) and ([scalerank] &lt;= 7)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &lt;= 0.005) and ([scale] = 2.5) and ([simplify] &gt;= 0.005) and ([scalerank] &lt;= 7)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.001) and ([simplify] &lt;= 0.005) and ([scalerank] &lt;= 9) and ([scale] = 2.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.005) and ([simplify] &lt;= 0.01) and ([scalerank] &lt;= 7) and ([scale] = 2.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 1) and ([simplify] &lt;= 1) and ([scalerank] &lt;= 3) and ([scale] = 2.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 1) and ([simplify] &lt;= 1) and ([scalerank] &lt;= 3) and ([scale] = 2.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000000</MinScaleDenominator>
+    <Filter>([simplify] &gt;= 0.1) and ([simplify] &lt;= 1) and ([scalerank] &lt;= 5) and ([scale] = 2.5)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-opacity="0.1" stroke="#d4cec2" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="roadshighscale"
+  status="off"
+  srs="+proj=longlat +ellps=WGS84 +no_defs">
+    <StyleName>roadshighscale-sketch1/sketch1</StyleName>
+    <StyleName>roadshighscale-sketch1/sketch2</StyleName>
+    <StyleName>roadshighscale</StyleName>
+    <StyleName>roadshighscale-sketch1</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ray/Documents/MapBox/project/sketchy/layers/roadshighscale/roads_high_scale.shp]]></Parameter>
+       <Parameter name="id"><![CDATA[roadshighscale]]></Parameter>
+       <Parameter name="project"><![CDATA[sketchy]]></Parameter>
+       <Parameter name="srs"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="ne10mroads" filter-mode="first" >
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="#f9f5eb" comp-op="multiply" clip="false" smooth="50" stroke-opacity="0.1" />
+  </Rule>
+</Style>
+<Layer name="ne10mroads"
+  srs="+proj=longlat +ellps=WGS84 +no_defs">
+    <StyleName>ne10mroads</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/ray/Documents/MapBox/project/sketchy/layers/ne10mroads/ne_10m_roads.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
